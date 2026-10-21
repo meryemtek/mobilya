@@ -75,7 +75,7 @@ export const AdminSettingsPage: React.FC = () => {
               <input
                 type="text"
                 className="form-control"
-                value={settings.SiteName || 'Bozkurt Mobilya'}
+                value={settings.SiteName || 'ABC Mobilya'}
                 onChange={(e) => handleChange('SiteName', e.target.value)}
               />
             </div>
@@ -109,7 +109,7 @@ export const AdminSettingsPage: React.FC = () => {
                 className="form-control"
                 value={settings.Email || ''}
                 onChange={(e) => handleChange('Email', e.target.value)}
-                placeholder="info@bozkurtmobilya.com"
+                placeholder="demo@example.com"
               />
             </div>
           </div>

@@ -16,7 +16,7 @@ export const AboutPage: React.FC = () => {
     <>
       <SeoHead
         title={page?.metaTitle || 'Hakkımızda'}
-        description={page?.metaDescription || 'Bozkurt Mobilya hakkında — köklü üretim deneyimi, değerlerimiz, kalite politikamız ve vizyonumuz.'}
+        description={page?.metaDescription || 'ABC Mobilya hakkında — köklü üretim deneyimi, değerlerimiz, kalite politikamız ve vizyonumuz.'}
       />
 
       {/* Hero Başlık */}
@@ -58,7 +58,7 @@ export const AboutPage: React.FC = () => {
             ) : (
               <>
                 <p style={{ fontSize: '1.05rem', lineHeight: 1.7, color: 'var(--color-text-muted)', marginBottom: '1.25rem' }}>
-                  Bozkurt Mobilya olarak, kurulduğumuz ilk günden bu yana ahşabın sıcaklığını ve dayanıklılığını modern tasarım anlayışıyla harmanlamayı hedefledik. Kaliteli hammadde, titiz işçilik ve müşteri memnuniyeti ilkelerimizle sektörde güven veren bir marka konumuna ulaştık.
+                  ABC Mobilya olarak, kurulduğumuz ilk günden bu yana ahşabın sıcaklığını ve dayanıklılığını modern tasarım anlayışıyla harmanlamayı hedefledik. Kaliteli hammadde, titiz işçilik ve müşteri memnuniyeti ilkelerimizle sektörde güven veren bir marka konumuna ulaştık.
                 </p>
                 <p style={{ fontSize: '0.9375rem', lineHeight: 1.7, color: 'var(--color-text-muted)', marginBottom: '1.5rem' }}>
                   Yalnızca mobilya üretmiyor; konforlu, işlevsel ve zamana meydan okuyan mekanlar tasarlıyoruz. Kurumsal ofislerden lüks konutlara, otel projelerinden özel siparişlere kadar geniş bir yelpazede hizmet sunmaktayız.
@@ -82,7 +82,7 @@ export const AboutPage: React.FC = () => {
             <div style={{ borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
               <img
                 src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1000&q=80"
-                alt="Bozkurt Mobilya Atölye ve İşçilik"
+                alt="ABC Mobilya Atölye ve İşçilik"
                 style={{ width: '100%', height: '460px', objectFit: 'cover' }}
               />
             </div>

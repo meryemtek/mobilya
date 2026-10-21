@@ -15,7 +15,7 @@ export const CorporatePage: React.FC = () => {
     <>
       <SeoHead
         title={page?.metaTitle || 'Kurumsal'}
-        description={page?.metaDescription || 'Bozkurt Mobilya kurumsal yapısı, üretim kapasitesi, kalite belgeleri ve standartları.'}
+        description={page?.metaDescription || 'ABC Mobilya kurumsal yapısı, üretim kapasitesi, kalite belgeleri ve standartları.'}
       />
 
       {/* Hero Başlık */}
@@ -53,7 +53,7 @@ export const CorporatePage: React.FC = () => {
             ) : (
               <>
                 <p style={{ fontSize: '1rem', lineHeight: 1.7, color: 'var(--color-text-muted)', marginBottom: '1.25rem' }}>
-                  Bozkurt Mobilya, modern makine parkuru ve tecrübeli usta kadrosuyla yüksek kapasiteli kurumsal projelere hız ve kalite kazandırmaktadır.
+                  ABC Mobilya, modern makine parkuru ve tecrübeli usta kadrosuyla yüksek kapasiteli kurumsal projelere hız ve kalite kazandırmaktadır.
                 </p>
                 <p style={{ fontSize: '0.9375rem', lineHeight: 1.7, color: 'var(--color-text-muted)', marginBottom: '1.5rem' }}>
                   Otel, ofis, restoran ve toplu konut projelerinde mimari ekiplerle koordineli çalışarak, şartnamelere birebir uygun malzeme seçimi ve zamanında teslimat garantisi sunmaktayız.

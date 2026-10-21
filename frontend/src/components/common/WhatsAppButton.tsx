@@ -15,7 +15,7 @@ export const WhatsAppButton: React.FC = () => {
       .catch(() => {});
   }, []);
 
-  const waUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent('Merhaba, Bozkurt Mobilya ürünleri hakkında bilgi almak istiyorum.')}`;
+  const waUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent('Merhaba, ABC Mobilya ürünleri hakkında bilgi almak istiyorum.')}`;
 
   return (
     <a

@@ -209,12 +209,12 @@ export const AdminLayout: React.FC = () => {
       <aside className={`admin-sidebar ${sidebarOpen ? 'open' : ''}`}>
         <div className="admin-brand" style={{ gap: '0.85rem', alignItems: 'center' }}>
           <img
-            src="/logo.png"
-            alt="Bozkurt Mobilya"
+            src="/demo-logo.svg"
+            alt="ABC Mobilya"
             style={{ height: '42px', width: 'auto', objectFit: 'contain' }}
           />
           <div>
-            <span className="admin-brand-title">BOZKURT</span>
+            <span className="admin-brand-title">ABC</span>
             <span className="admin-brand-sub">Yönetim Paneli</span>
           </div>
         </div>

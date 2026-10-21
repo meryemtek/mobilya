@@ -31,7 +31,7 @@ export const LegalPage: React.FC = () => {
     <>
       <SeoHead
         title={page?.metaTitle || page?.title || defaultTitle}
-        description={page?.metaDescription || `Bozkurt Mobilya ${defaultTitle} ve bilgilendirmesi.`}
+        description={page?.metaDescription || `ABC Mobilya ${defaultTitle} ve bilgilendirmesi.`}
       />
 
       <div style={{ backgroundColor: 'var(--color-primary-dark)', color: '#fff', padding: '3.5rem 0' }}>
@@ -50,12 +50,12 @@ export const LegalPage: React.FC = () => {
           ) : (
             <div>
               <p style={{ marginBottom: '1.5rem' }}>
-                İşbu <strong>{defaultTitle}</strong>, Bozkurt Mobilya tarafından ziyaretçilerimizin ve müşterilerimizin kişisel verilerinin korunması, gizliliğinin sağlanması ve yasal haklarının korunması amacıyla hazırlanmıştır.
+                İşbu <strong>{defaultTitle}</strong>, ABC Mobilya tarafından ziyaretçilerimizin ve müşterilerimizin kişisel verilerinin korunması, gizliliğinin sağlanması ve yasal haklarının korunması amacıyla hazırlanmıştır.
               </p>
 
               <h3 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '0.75rem' }}>1. Veri Sorumlusu</h3>
               <p style={{ color: 'var(--color-text-muted)', marginBottom: '1.25rem' }}>
-                6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, Bozkurt Mobilya olarak veri sorumlusu sıfatıyla tarafımıza ilettiğiniz kimlik, iletişim ve talep verilerinizi kanuna uygun olarak işlemekteyiz.
+                6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, ABC Mobilya olarak veri sorumlusu sıfatıyla tarafımıza ilettiğiniz kimlik, iletişim ve talep verilerinizi kanuna uygun olarak işlemekteyiz.
               </p>
 
               <h3 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '0.75rem' }}>2. Verilerin İşlenme Amacı</h3>

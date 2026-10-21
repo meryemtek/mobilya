@@ -53,7 +53,7 @@ export const ServicesPage: React.FC = () => {
     <>
       <SeoHead
         title="Hizmetlerimiz"
-        description="Bozkurt Mobilya hizmetleri — özel tasarım, kurumsal projeler, otel donatıları, teslimat ve montaj."
+        description="ABC Mobilya hizmetleri — özel tasarım, kurumsal projeler, otel donatıları, teslimat ve montaj."
       />
 
       {/* Hero Başlık */}

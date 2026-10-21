@@ -7,7 +7,7 @@ interface PlaceholderImageProps {
 }
 
 export const PlaceholderImage: React.FC<PlaceholderImageProps> = ({
-  text = 'Bozkurt Mobilya',
+  text = 'ABC Mobilya',
   className = '',
 }) => {
   return (

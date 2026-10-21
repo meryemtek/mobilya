@@ -259,7 +259,7 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <SeoHead
-        title="Ana Sayfa | Bozkurt Mobilya & Tasarım"
+        title="Ana Sayfa | ABC Mobilya & Tasarım"
         description="Aydınlık, ferah ve modern mobilya çözümleri. Oturma grupları, yemek odaları, yatak odaları ve tamamlayıcı mobilyalar."
       />
 
@@ -500,7 +500,7 @@ export const HomePage: React.FC = () => {
             <span className="deal-tag">Sezon Sonu Fırsatları</span>
             <h2 className="deal-title">Seçili Koleksiyonlarda %35'e Varan İndirim</h2>
             <p className="deal-desc">
-              Doğal masif ahşap işçiliği ve zamansız tasarım çizgileriyle üretilen Bozkurt Mobilya modelleri şimdi sınırlı süre için avantajlı fiyatlarla.
+              Doğal masif ahşap işçiliği ve zamansız tasarım çizgileriyle üretilen ABC Mobilya modelleri şimdi sınırlı süre için avantajlı fiyatlarla.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link to="/urunler/indirimli-urunler" className="btn btn-primary btn-lg">
@@ -521,7 +521,7 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 6. NEDEN BOZKURT MOBİLYA? (Kurumsal Güven & Ayrıcalıklar) */}
+      {/* 6. NEDEN ABC MOBİLYA? (Kurumsal Güven & Ayrıcalıklar) */}
       <section className="trust-section">
         <div className="container">
           <div className="trust-grid">
@@ -629,7 +629,7 @@ export const HomePage: React.FC = () => {
                 ))}
               </div>
               <p className="review-text">
-                "Hem şık hem de inanılmaz dayanıklı. Fiyat/performans olarak piyasadaki birçok ünlü markanın çok üzerinde. Bozkurt Mobilya ekibine teşekkürler!"
+                "Hem şık hem de inanılmaz dayanıklı. Fiyat/performans olarak piyasadaki birçok ünlü markanın çok üzerinde. ABC Mobilya ekibine teşekkürler!"
               </p>
               <div className="review-author">
                 <div className="review-avatar">SK</div>
@@ -652,7 +652,7 @@ export const HomePage: React.FC = () => {
         <div className="container">
           <div className="section-header center" style={{ marginBottom: '2.5rem' }}>
             <span style={{ color: '#008779', fontWeight: 700, fontSize: '0.85rem', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
-              #BozkurtMobilya
+              #ABCMobilya
             </span>
             <h2 className="section-title" style={{ marginTop: '0.5rem' }}>İlham Veren Yaşam Köşeleri</h2>
             <p style={{ color: '#64748b' }}>Müşterilerimizin evlerinden ve showroomumuzdan kareler.</p>
@@ -667,7 +667,7 @@ export const HomePage: React.FC = () => {
               />
               <div className="gallery-hover-overlay">
                 <Eye size={24} />
-                <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>@bozkurtmobilya</span>
+                <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>@abcmobilyademo</span>
               </div>
             </div>
 
@@ -679,7 +679,7 @@ export const HomePage: React.FC = () => {
               />
               <div className="gallery-hover-overlay">
                 <Eye size={24} />
-                <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>@bozkurtmobilya</span>
+                <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>@abcmobilyademo</span>
               </div>
             </div>
 
@@ -691,7 +691,7 @@ export const HomePage: React.FC = () => {
               />
               <div className="gallery-hover-overlay">
                 <Eye size={24} />
-                <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>@bozkurtmobilya</span>
+                <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>@abcmobilyademo</span>
               </div>
             </div>
 
@@ -703,7 +703,7 @@ export const HomePage: React.FC = () => {
               />
               <div className="gallery-hover-overlay">
                 <Eye size={24} />
-                <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>@bozkurtmobilya</span>
+                <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>@abcmobilyademo</span>
               </div>
             </div>
           </div>

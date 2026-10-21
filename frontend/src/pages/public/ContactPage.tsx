@@ -100,7 +100,7 @@ export const ContactPage: React.FC = () => {
   };
 
   const phone = settings.PhoneNumber || '+90 555 000 0000';
-  const email = settings.Email || 'info@bozkurtmobilya.com';
+  const email = settings.Email || 'demo@example.com';
   const address = settings.Address || 'Örnek Mah. Mobilya Sanayi Cad. No:12, İstanbul';
   const workingHours = settings.WorkingHours || 'Pazartesi - Cumartesi: 09:00 - 18:00';
   const whatsapp = settings.WhatsApp || '905550000000';
@@ -109,7 +109,7 @@ export const ContactPage: React.FC = () => {
     <>
       <SeoHead
         title="İletişim & Konum"
-        description="Bozkurt Mobilya iletişim bilgileri, fabrika ve showroom adresi, teklif formu ve hızlı WhatsApp destek hattı."
+        description="ABC Mobilya iletişim bilgileri, fabrika ve showroom adresi, teklif formu ve hızlı WhatsApp destek hattı."
       />
 
       <div className="container section contact-section">

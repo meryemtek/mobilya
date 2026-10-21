@@ -207,7 +207,7 @@ export const CatalogPage: React.FC = () => {
   const pageTitle = currentCategory ? `${currentCategory.name} Modelleri` : 'Tüm Ürün Koleksiyonu';
   const pageDescription =
     currentCategory?.description ||
-    'Bozkurt Mobilya estetik, konfor ve fonksiyonelliği bir araya getiren özgün mobilya tasarımlarını keşfedin.';
+    'ABC Mobilya estetik, konfor ve fonksiyonelliği bir araya getiren özgün mobilya tasarımlarını keşfedin.';
 
   // Kategoriye ait banner içeriği (MEGA_MENU_DATA'dan; tüm ürünler sayfasında varsayılan)
   const featured = categorySlug ? MEGA_MENU_DATA[categorySlug] : undefined;
@@ -217,7 +217,7 @@ export const CatalogPage: React.FC = () => {
   return (
     <>
       <SeoHead
-        title={currentCategory?.metaTitle || `${pageTitle} | Bozkurt Mobilya`}
+        title={currentCategory?.metaTitle || `${pageTitle} | ABC Mobilya`}
         description={currentCategory?.metaDescription || pageDescription}
       />
 

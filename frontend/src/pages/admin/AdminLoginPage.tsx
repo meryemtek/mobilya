@@ -36,7 +36,7 @@ export const AdminLoginPage: React.FC = () => {
 
   return (
     <>
-      <SeoHead title="Yetkili Girişi | Bozkurt Mobilya" />
+      <SeoHead title="Yetkili Girişi | ABC Mobilya" />
       <div
         style={{
           minHeight: '100vh',
@@ -64,8 +64,8 @@ export const AdminLoginPage: React.FC = () => {
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <div style={{ marginBottom: '1.25rem' }}>
               <img
-                src="/logo.png"
-                alt="Bozkurt Mobilya"
+                src="/demo-logo.svg"
+                alt="ABC Mobilya"
                 style={{ height: '70px', width: 'auto', objectFit: 'contain' }}
               />
             </div>
@@ -73,7 +73,7 @@ export const AdminLoginPage: React.FC = () => {
               Yetkili Yönetim Portalı
             </h1>
             <p style={{ fontSize: '0.875rem', color: '#64748b', margin: 0 }}>
-              Bozkurt Mobilya Ürün & Katalog Yönetimi
+              ABC Mobilya Ürün & Katalog Yönetimi
             </p>
           </div>
 
@@ -111,7 +111,7 @@ export const AdminLoginPage: React.FC = () => {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@bozkurtmobilya.local"
+                  placeholder="admin@example.com"
                   required
                   style={{
                     width: '100%',

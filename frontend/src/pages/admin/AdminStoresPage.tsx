@@ -200,7 +200,7 @@ export const AdminStoresPage: React.FC = () => {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Örn: Bozkurt Mobilya Merkez Showroom"
+                    placeholder="Örn: ABC Mobilya Merkez Showroom"
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                     required

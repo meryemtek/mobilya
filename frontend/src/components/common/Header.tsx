@@ -163,8 +163,8 @@ export const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="logo-container">
             <img
-              src="/logo-trimmed.png"
-              alt="Bozkurt Mobilya"
+              src="/demo-logo.svg"
+              alt="ABC Mobilya"
               className="header-logo-img"
             />
           </Link>

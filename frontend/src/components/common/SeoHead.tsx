@@ -10,13 +10,13 @@ interface SeoHeadProps {
 
 export const SeoHead: React.FC<SeoHeadProps> = ({
   title,
-  description = 'Bozkurt Mobilya — Yaşam alanlarınıza ve kurumsal mekanlarınıza değer katan estetik, kaliteli ve ergonomik mobilya çözümleri.',
-  ogImage = '/logo.png',
+  description = 'ABC Mobilya — Yaşam alanlarınıza ve kurumsal mekanlarınıza değer katan estetik, kaliteli ve ergonomik mobilya çözümleri.',
+  ogImage = '/demo-logo.svg',
   ogType = 'website',
 }) => {
   const fullTitle = title 
-    ? `${title} | Bozkurt Mobilya` 
-    : 'Bozkurt Mobilya | Kurumsal ve Özel Tasarım Mobilya';
+    ? `${title} | ABC Mobilya` 
+    : 'ABC Mobilya | Kurumsal ve Özel Tasarım Mobilya';
 
   useEffect(() => {
     document.title = fullTitle;

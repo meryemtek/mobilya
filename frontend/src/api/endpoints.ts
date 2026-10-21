@@ -1,4 +1,5 @@
 import api from './client';
+import { demoContent } from './demoContent';
 import type {
   Category,
   ProductListItem,
@@ -17,8 +18,8 @@ import type {
 
 export const publicApi = {
   // Kategoriler
-  getCategories: () => api.get<Category[]>('/categories').then((r) => r.data),
-  getCategoryBySlug: (slug: string) => api.get<Category>(`/categories/${slug}`).then((r) => r.data),
+  getCategories: () => api.get<Category[]>('/categories').then((r) => demoContent(r.data)),
+  getCategoryBySlug: (slug: string) => api.get<Category>(`/categories/${slug}`).then((r) => demoContent(r.data)),
 
   // Ürünler
   getProducts: (params?: {
@@ -28,21 +29,21 @@ export const publicApi = {
     search?: string;
     sort?: string;
     featured?: boolean;
-  }) => api.get<PagedResult<ProductListItem>>('/products', { params }).then((r) => r.data),
+  }) => api.get<PagedResult<ProductListItem>>('/products', { params }).then((r) => demoContent(r.data)),
 
-  getProductBySlug: (slug: string) => api.get<ProductDetail>(`/products/${slug}`).then((r) => r.data),
+  getProductBySlug: (slug: string) => api.get<ProductDetail>(`/products/${slug}`).then((r) => demoContent(r.data)),
 
   // Vitrin (Yeni Ürünler & Çok Satanlar)
-  getShowcase: () => api.get<{ newProducts: any[]; bestSellers: any[] }>('/products/showcase').then((r) => r.data),
+  getShowcase: () => api.get<{ newProducts: any[]; bestSellers: any[] }>('/products/showcase').then((r) => demoContent(r.data)),
 
   // Bannerlar & Hizmetler
-  getBanners: () => api.get<Banner[]>('/banners').then((r) => r.data),
-  getServices: () => api.get<ServiceItem[]>('/services').then((r) => r.data),
-  getStores: () => api.get<StoreItem[]>('/stores').then((r) => r.data),
+  getBanners: () => api.get<Banner[]>('/banners').then((r) => demoContent(r.data)),
+  getServices: () => api.get<ServiceItem[]>('/services').then((r) => demoContent(r.data)),
+  getStores: () => api.get<StoreItem[]>('/stores').then((r) => demoContent(r.data)),
 
   // Sayfalar & Ayarlar
-  getPageBySlug: (slug: string) => api.get<PageContent>(`/pages/${slug}`).then((r) => r.data),
-  getSiteSettings: () => api.get<SiteSettings>('/site-settings/public').then((r) => r.data),
+  getPageBySlug: (slug: string) => api.get<PageContent>(`/pages/${slug}`).then((r) => demoContent(r.data)),
+  getSiteSettings: () => api.get<SiteSettings>('/site-settings/public').then((r) => demoContent(r.data)),
 
   // İletişim Formu
   sendContactMessage: (data: {
@@ -51,7 +52,7 @@ export const publicApi = {
     phone?: string;
     subject?: string;
     message: string;
-  }) => api.post<{ message: string; id: number }>('/contact-messages', data).then((r) => r.data),
+  }) => api.post<{ message: string; id: number }>('/contact-messages', data).then((r) => demoContent(r.data)),
 };
 
 // ── Admin API ────────────────────────────────────────────────────────────────

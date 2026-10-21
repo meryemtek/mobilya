@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
   }, []);
 
   const phone = settings.PhoneNumber || '+90 555 000 0000';
-  const email = settings.Email || 'info@bozkurtmobilya.com';
+  const email = settings.Email || 'demo@example.com';
   const address = settings.Address || 'Örnek Mah. Mobilya Sanayi Cad. No:12, İstanbul';
   const workingHours = settings.WorkingHours || 'Pazartesi - Cumartesi: 09:00 - 18:00';
 
@@ -56,8 +56,8 @@ export const Footer: React.FC = () => {
                 }}
               >
                 <img
-                  src="/logo.png"
-                  alt="Bozkurt Mobilya"
+                  src="/demo-logo.svg"
+                  alt="ABC Mobilya"
                   style={{ height: '46px', width: 'auto', objectFit: 'contain' }}
                 />
               </div>
@@ -184,7 +184,7 @@ export const Footer: React.FC = () => {
           }}
         >
           <div>
-            © {new Date().getFullYear()} Bozkurt Mobilya. Tüm hakları saklıdır.
+            © {new Date().getFullYear()} ABC Mobilya · Demo proje. Marka ve içerikler örnek amaçlıdır.
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
             <Link to="/gizlilik-politikasi" style={{ color: 'inherit' }}>Gizlilik Politikası</Link>
