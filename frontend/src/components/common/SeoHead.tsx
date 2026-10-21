@@ -37,7 +37,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
       ogTitle.setAttribute('property', 'og:title');
       document.head.appendChild(ogTitle);
     }
-    ogTitle.setAttribute('content', fullTitle);
+    ogTitle.setAttribute('content', 'ABC Mobilya | Demo');
 
     let ogDesc = document.querySelector('meta[property="og:description"]');
     if (!ogDesc) {
@@ -45,7 +45,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
       ogDesc.setAttribute('property', 'og:description');
       document.head.appendChild(ogDesc);
     }
-    ogDesc.setAttribute('content', description);
+    ogDesc.setAttribute('content', 'Mobilya web sitesi demo projesi.');
 
     let ogTypeEl = document.querySelector('meta[property="og:type"]');
     if (!ogTypeEl) {
@@ -61,7 +61,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
       ogImgEl.setAttribute('property', 'og:image');
       document.head.appendChild(ogImgEl);
     }
-    ogImgEl.setAttribute('content', ogImage);
+    ogImgEl.setAttribute('content', new URL('/demo-preview.png', window.location.origin).href);
   }, [fullTitle, description, ogImage, ogType]);
 
   return null;
