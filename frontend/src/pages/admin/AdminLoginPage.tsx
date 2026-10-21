@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Lock, Mail, Armchair, AlertCircle, ArrowRight, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { Lock, Mail, Armchair, AlertCircle, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { adminApi } from '../../api/endpoints';
 import { useAuth } from '../../contexts/AuthContext';
 import { SeoHead } from '../../components/common/SeoHead';
@@ -32,11 +32,6 @@ export const AdminLoginPage: React.FC = () => {
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleQuickFill = () => {
-    setEmail('admin@bozkurtmobilya.local');
-    setPassword('Admin123!');
   };
 
   return (
@@ -80,45 +75,6 @@ export const AdminLoginPage: React.FC = () => {
             <p style={{ fontSize: '0.875rem', color: '#64748b', margin: 0 }}>
               Bozkurt Mobilya Ürün & Katalog Yönetimi
             </p>
-          </div>
-
-          {/* Hızlı Demo Bilgileri Kutusu */}
-          <div
-            style={{
-              backgroundColor: '#f0fdfa',
-              border: '1px solid #ccfbf1',
-              borderRadius: '10px',
-              padding: '1rem',
-              marginBottom: '1.5rem',
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#008779', fontWeight: 700, fontSize: '0.825rem' }}>
-                <ShieldCheck size={16} />
-                <span>Yetkili Giriş Bilgileri</span>
-              </div>
-              <button
-                type="button"
-                onClick={handleQuickFill}
-                style={{
-                  backgroundColor: '#008779',
-                  color: '#ffffff',
-                  border: 'none',
-                  borderRadius: '6px',
-                  padding: '4px 10px',
-                  fontSize: '0.75rem',
-                  fontWeight: 600,
-                  cursor: 'pointer',
-                  transition: 'opacity 0.2s',
-                }}
-              >
-                Bilgileri Doldur
-              </button>
-            </div>
-            <div style={{ fontSize: '0.8rem', color: '#334155', lineHeight: 1.5 }}>
-              <div>E-Posta: <strong style={{ color: '#0f172a' }}>admin@bozkurtmobilya.local</strong></div>
-              <div>Şifre: <strong style={{ color: '#0f172a' }}>Admin123!</strong></div>
-            </div>
           </div>
 
           {error && (
