@@ -365,7 +365,6 @@ export const CatalogPage: React.FC = () => {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: '270px 1fr',
               gap: '2.5rem',
               alignItems: 'flex-start',
             }}
@@ -486,7 +485,7 @@ export const CatalogPage: React.FC = () => {
             </aside>
 
             {/* SAĞ: Arama, Sıralama ve Ürün Kartları */}
-            <div>
+            <div className="catalog-results">
               {/* Üst Filtre & Sıralama Çubuğu */}
               <div
                 style={{
@@ -505,6 +504,7 @@ export const CatalogPage: React.FC = () => {
               >
                 {/* Arama Formu */}
                 <form
+                  className="catalog-search-form"
                   onSubmit={handleSearchSubmit}
                   style={{
                     display: 'flex',
@@ -562,7 +562,7 @@ export const CatalogPage: React.FC = () => {
                 </form>
 
                 {/* Sıralama & Toplam Sayı */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+                <div className="catalog-sort-row" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
                   <span style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 500 }}>
                     <strong style={{ color: '#0f172a' }}>{productsData.totalCount}</strong> ürün
                   </span>
@@ -737,9 +737,10 @@ export const CatalogPage: React.FC = () => {
                 /* Ürün Kartları Grid (Anasayfa ile %100 Uyumlu) */
                 <>
                   <div
+                    className="catalog-products-grid"
                     style={{
                       display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+                      gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))',
                       gap: '1.75rem',
                     }}
                   >

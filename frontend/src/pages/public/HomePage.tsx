@@ -323,7 +323,7 @@ export const HomePage: React.FC = () => {
                 setSliderIndex(0);
               }}
             >
-              <strong className="tab-accent">Yeni</strong> Ürünler
+              Yeni Ürünler
             </button>
             <button
               className={`showcase-tab-btn ${activeTab === 'cok-satan' ? 'active' : ''}`}
@@ -332,7 +332,7 @@ export const HomePage: React.FC = () => {
                 setSliderIndex(0);
               }}
             >
-              <strong>En Çok</strong> Satanlar
+              En Çok Satanlar
             </button>
           </div>
 
