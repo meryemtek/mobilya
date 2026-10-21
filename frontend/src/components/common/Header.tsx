@@ -45,7 +45,7 @@ export const Header: React.FC = () => {
   // Mega Menü Etkileşim Durumları
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
   const [expandedMobileCategory, setExpandedMobileCategory] = useState<string | null>(null);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const navigate = useNavigate();
   const location = useLocation();
