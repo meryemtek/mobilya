@@ -1,0 +1,29 @@
+# Dependencies and build outputs
+node_modules/
+dist/
+bin/
+obj/
+*.tsbuildinfo
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.*.Local.json
+*.pfx
+*.p12
+*.pem
+*.key
+
+# Editor and operating system files
+.vs/
+.idea/
+*.user
+*.suo
+Thumbs.db
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp

@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BozkurtMobilya.Api/BozkurtMobilya.Api.csproj" />
+    <Project Path="src/BozkurtMobilya.Application/BozkurtMobilya.Application.csproj" />
+    <Project Path="src/BozkurtMobilya.Domain/BozkurtMobilya.Domain.csproj" />
+    <Project Path="src/BozkurtMobilya.Infrastructure/BozkurtMobilya.Infrastructure.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,6 @@
+@BozkurtMobilya.Api_HostAddress = http://localhost:5152
+
+GET {{BozkurtMobilya.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
