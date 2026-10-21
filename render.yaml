@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: bozkurt-mobilya-api
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        sync: false
+      - key: Jwt__Key
+        generateValue: true
+      - key: Jwt__Issuer
+        value: BozkurtMobilyaApi
+      - key: Jwt__Audience
+        value: BozkurtMobilyaFrontend
+      - key: Jwt__ExpiresInMinutes
+        value: "1440"
+      - key: AdminSeed__Email
+        sync: false
+      - key: AdminSeed__Password
+        sync: false
