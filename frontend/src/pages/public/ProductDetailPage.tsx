@@ -284,12 +284,12 @@ export const ProductDetailPage: React.FC = () => {
         </div>
       </div>
 
-      <div className="container" style={{ padding: '2.5rem 0 4rem' }}>
+      <div className="container product-detail-page">
         {/* Üst Bölüm: Galeri + Bilgi */}
         <div
+          className="product-detail-layout"
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
             gap: '3rem',
             alignItems: 'flex-start',
           }}
@@ -638,9 +638,10 @@ export const ProductDetailPage: React.FC = () => {
               Benzer Modeller
             </h2>
             <div
+              className="related-products-grid"
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 260px), 1fr))',
                 gap: '1.5rem',
               }}
             >
